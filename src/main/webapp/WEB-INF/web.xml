@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>EcommercePlatform</display-name>
+  <servlet>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <servlet-class>com.ecommerce.servlets.CustomerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <url-pattern>/registerCustomer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SellerRegisterServlet</servlet-name>
+    <servlet-class>com.ecommerce.servlets.SellerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellerRegisterServlet</servlet-name>
+    <url-pattern>/registerSeller</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
